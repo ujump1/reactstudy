@@ -1,0 +1,12 @@
+.board-row:after {
+    clear: both;
+    content: "";
+    /*display: Table;*/
+}
+.status {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.board-row{
+    text-align: center;
+}

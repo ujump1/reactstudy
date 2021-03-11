@@ -1,0 +1,9 @@
+.game{
+    text-align: center;
+}
+.game-info {
+    margin-left: 20px;
+}
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
