@@ -2,7 +2,7 @@
  * 公用方法类
  */
 import http from './Http';
-import {message, Modal} from 'antd';
+import {message} from 'antd';
 
 class PcService {
 
@@ -65,8 +65,8 @@ class PcService {
                 break;
         }
         eightNum = eightNum.replace(/(.{4})(.{2})/, '$1-$2-');
-        let birthYeay = new Date(eightNum);
-        age = (nowYear - birthYeay) / (365 * 24 * 3600000);
+        let birthYear = new Date(eightNum);
+        age = (nowYear - birthYear) / (365 * 24 * 3600000);
         if (isNaN(age) || age > 150 || age < 0) {
             age = '无';
         } else if (age < 1 && age > 0) {
@@ -88,44 +88,44 @@ class PcService {
     }
 
     //正则表达式；判断身份证号码是否正确
-    isIDNumber(idno) {
+    isIDNumber(idNo) {
         let result = false;
         let IDNOString = new RegExp(/^\d{17}(\d|X|x)$/);
-        if (IDNOString.test(idno.toString())) {
+        if (IDNOString.test(idNo.toString())) {
             result = true;
         }
         return result;
     }
 
     //正则表达式；判断是否为手机号码
-    isPhoneNumber(phoneno) {
+    isPhoneNumber(phoneNo) {
         let result = false;
         let PhoneString = new RegExp(/^(((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8})|((\d{3,4}-?|\s)?\d{7,14})$/);
-        if (PhoneString.test(phoneno.toString())) {
+        if (PhoneString.test(phoneNo.toString())) {
             result = true;
         }
         return result;
     }
 
     //正则表达式；判断是否为电子邮箱
-    isEmail(phoneno) {
+    isEmail(phoneNo) {
         let result = false;
         let PhoneString = new RegExp(/^[a-zA-Z0-9_-]+(\.*[a-zA-Z0-9_-]+)+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/);
-        if (PhoneString.test(phoneno.toString())) {
+        if (PhoneString.test(phoneNo.toString())) {
             result = true;
         }
         return result;
     }
 
     //获取列表数据分页
-    fetchData(copmonent, url = '', params = {}, headers = null, listName = 'dataSource') {
+    fetchData(component, url = '', params = {}, headers = null, listName = 'dataSource') {
         let pagination = {
             page: params.page ? params.page : 1,
             rows: params.pageSize ? params.pageSize : 10
         };
         if (params.pageSize) delete params.pageSize;
         let _params = this.extend(params, pagination);
-        copmonent.setState({
+        component.setState({
             loading: true
         });
         http.request({
@@ -139,7 +139,7 @@ class PcService {
                 lists.length && lists.map(v => {
                     v.key = v.id;
                 });
-                copmonent.setState({
+                component.setState({
                     loading: false,
                     [listName]: lists,
                     // selectedRowKeys: [],
@@ -153,7 +153,7 @@ class PcService {
                     }
                 });
             } else {
-                copmonent.setState({
+                component.setState({
                     loading: false
                 });
                 // Modal.info({
@@ -163,7 +163,7 @@ class PcService {
                message.error(res.message);
             }
         }).catch(function (err) {
-            copmonent.setState({
+            component.setState({
                 loading: false
             });
             // Modal.info({

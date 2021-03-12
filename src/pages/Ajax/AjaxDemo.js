@@ -2,7 +2,6 @@ import { Card,Button } from 'antd';
 import React from 'react'
 import MyTable from "../../component/Table/MyTable";
 import PcService from "../../utils/pc.service";
-import AxiosUtils from "../../utils/AxiosUtils";
 const pcService = new PcService();
 
 
