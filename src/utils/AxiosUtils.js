@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {Modal} from 'antd'
 // 自定义头部（包含post的contentType)会有一个预请求
-export default class Axios {
+export default class AxiosUtils {
 
     static get(url,params){
         return new Promise((resolve,reject) => {

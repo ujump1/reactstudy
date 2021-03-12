@@ -1,8 +1,8 @@
 import { Card,Button } from 'antd';
 import React from 'react'
-import Axios from "../../utils/Axios";
 import MyTable from "../../component/Table/MyTable";
 import PcService from "../../utils/pc.service";
+import AxiosUtils from "../../utils/AxiosUtils";
 const pcService = new PcService();
 
 
@@ -47,7 +47,7 @@ export default class AjaxDemo extends React.Component  {
         // this.setState({
         //     loading: true
         // });
-        // Axios.get(
+        // AxiosUtils.get(
         //     process.env.REACT_APP_BASE_URL+'/userForReact/findAll',{},{
         //         userName:"1"
         //     }
