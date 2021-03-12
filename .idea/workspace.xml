@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a704cb84-729c-437a-85ec-a1aa8612b42e" name="Default Changelist" comment="react学习：插槽，路由，antd表单查询,axios，redux">
+    <list default="true" id="a704cb84-729c-437a-85ec-a1aa8612b42e" name="Default Changelist" comment="react学习：修改axios工具类名称">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Ajax/AjaxDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Ajax/AjaxDemo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AxiosUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Http.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615452595221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="react学习：修改axios工具类名称">
+      <created>1615519230362</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615519230362</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -286,7 +290,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react学习：插槽，路由，antd表单查询,axios，redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="react学习：插槽，路由，antd表单查询,axios，redux" />
+    <MESSAGE value="react学习：修改axios工具类名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="react学习：修改axios工具类名称" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
