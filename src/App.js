@@ -8,6 +8,7 @@ import  './App.css';
 import ReduxDemo from "./pages/ReduxDemo/ReduxDemo";
 import ReduxDemoSubscribe from "./pages/ReduxDemo/ReduxDemoSubscribe";
 import Theme from "./pages/Context/Theme";
+import ReduxDemoThunk from "./pages/ReduxDemo/ReduxDemoThunk";
 
 class App extends React.Component{
 
@@ -24,6 +25,7 @@ class App extends React.Component{
                           <Link to="/ajax"> ajax </Link>
                           <Link to="/reduxDemo"> reduxDemo </Link>
                           <Link to="/reduxDemoSubscribe"> reduxDemoSubscribe </Link>
+                          <Link to="/reduxDemoReduxThunk"> reduxDemoReduxThunk </Link>
                           <Link to="/context"> context </Link>
                       </div>
                       <Route path="/" exact component={Game}></Route>
@@ -32,6 +34,7 @@ class App extends React.Component{
                       <Route path="/ajax" component={AjaxDemo}></Route>
                       <Route path="/reduxDemo" component={ReduxDemo}></Route>
                       <Route path="/reduxDemoSubscribe" component={ReduxDemoSubscribe}></Route>
+                      <Route path="/reduxDemoReduxThunk" component={ReduxDemoThunk}></Route>
                       <Route path="/context" component={Theme}></Route>
                   </Router>
 

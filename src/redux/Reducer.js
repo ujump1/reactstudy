@@ -23,8 +23,8 @@ function calculate(state = count,action){
     }
 }
 
-const todoApp =combineReducers({
+const myReducers =combineReducers({
     calculate
 })
 
-export default todoApp;
+export default myReducers;
