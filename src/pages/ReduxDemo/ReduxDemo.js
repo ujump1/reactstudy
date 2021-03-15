@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Button} from "antd";
+import {Button, Input} from "antd";
 import {connect} from "react-redux";
 import {add,sub} from "../../redux/Action";
 import {ThemeContext} from "../../context/ThemeContext";
@@ -8,8 +8,12 @@ class ReduxDemo extends React.Component{
 
     constructor(props) {
         super(props);
+        this.state={
+            addNumber:0
+        }
         this.handleBtnClickAdd = this.handleBtnClickAdd.bind(this);
         this.handleBtnClickSub = this.handleBtnClickSub.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
     static contextType = ThemeContext;
@@ -29,12 +33,32 @@ class ReduxDemo extends React.Component{
         // dispatch(action);
     }
 
+    handleChange(e){
+        this.setState(
+            {
+                addNumber:e.target.value
+            }
+        )
+    }
+
+    handleAdd(number,e){
+        this.props.addNumber(Number.parseInt(number));
+    }
+
+
+
     render() {
         console.log(this.context);
         return (
             <div>
                 <Button type='primary' onClick={this.handleBtnClickAdd}>自增5</Button>
+                <Button type='primary' onClick={this.props.addAction}>自增5</Button>
                 <Button type='primary' onClick={this.handleBtnClickSub}>自减5</Button>
+                <div>
+                    <Input  style={{width: '135px'}}    onChange={this.handleChange}></Input>
+                    {/*这里主要是为了测试传参才这样写的*/}
+                    <Button type='primary' onClick={this.handleAdd.bind(this,this.state.addNumber)}>增加</Button>
+                </div>
                 <p>当前数字{this.props.number}</p>
             </div>
         )
@@ -57,7 +81,8 @@ const subAction = sub(5)
 const mapDispatchToProps=(dispatch)=>{
     return{
         addAction:()=>dispatch(addAction),
-        subAction:()=>dispatch(subAction)
+        subAction:()=>dispatch(subAction),
+        addNumber:(number) =>dispatch(add(number))
     }
 }
 // 导出类要修改 或者使用@connect注解
