@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f63d8699-be02-4ecf-b215-9405aa87f3fd" name="Default Changelist" comment="删除无用的文件">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f63d8699-be02-4ecf-b215-9405aa87f3fd" name="Default Changelist" comment="react学习:redux-thunk学习">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemoThunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemoThunk.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +31,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../WebstormProjects/react-admin-tab" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="D:\Program Files\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -66,9 +66,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615790586938</updated>
-      <workItem from="1615790590994" duration="5099000" />
+      <workItem from="1615790590994" duration="11355000" />
+      <workItem from="1615802345259" duration="209000" />
+      <workItem from="1615802585654" duration="189000" />
+      <workItem from="1615854557474" duration="1295000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="react学习:组件事件传额外参数,组件直接调用redux的dispatch映射方法">
+      <created>1615795829626</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615795829627</updated>
+    </task>
+    <task id="LOCAL-00003" summary="react学习:redux-thunk学习">
+      <created>1615802174736</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615802174736</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,7 +105,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除无用的文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除无用的文件" />
+    <MESSAGE value="react学习:组件事件传额外参数,组件直接调用redux的dispatch映射方法" />
+    <MESSAGE value="react学习:redux-thunk学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="react学习:redux-thunk学习" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

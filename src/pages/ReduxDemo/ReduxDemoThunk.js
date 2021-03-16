@@ -43,10 +43,35 @@ const addActionSync = (props,number)=> dispatch => {
     // 最后调用dispatch
     dispatch(add(number))
 }
-const subActionSync = (number)=> dispatch => {
-    console.log(number);
-    dispatch(sub(number))
+
+// const subActionSync = (number)=> {
+//     return dispatch => {
+//         console.log(number);
+//         dispatch(sub(number))
+//
+//     }
+// }
+
+// 异步
+const subActionSync = (number)=> {
+    return dispatch => {
+        console.log(number);
+        setTimeout(() => {
+            dispatch(sub(number))
+        }, 2000)
+    }
 }
+
+
+
+// 下面这种写法也行
+// function subActionSync(number) {
+//     return dispatch => {
+//         setTimeout(() => {
+//             dispatch(sub(number))
+//         }, 2000)
+//     }
+// }
 
 
 //映射Redux actions到组件的属性
