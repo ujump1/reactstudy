@@ -1,5 +1,6 @@
 import React from 'react'
 import './Square.css'
+import {Button} from "antd";
 
 
 export default class Square extends React.Component {
@@ -12,9 +13,8 @@ export default class Square extends React.Component {
 
     render() {
         return(
-          <button className="square" onClick={() => this.setState({value : 'X'})}>
-              {this.state.value}
-          </button>
+          <Button className="square" style={{padding:0}} onClick={() => this.props.onClick("x")}><span>{this.props.value}</span>
+          </Button>
         )
     }
 

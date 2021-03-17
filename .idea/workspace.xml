@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f63d8699-be02-4ecf-b215-9405aa87f3fd" name="Default Changelist" comment="react学习:redux-thunk学习">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemoThunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemoThunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Board/Board.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Board/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Square/Square.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Square/Square.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Square/Square.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Square/Square.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ReduxDemo/ReduxDemo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1pmaBV6XdgCy0ncwOg5dMsMiFve" />
   <component name="ProjectViewState">
@@ -69,7 +81,8 @@
       <workItem from="1615790590994" duration="11355000" />
       <workItem from="1615802345259" duration="209000" />
       <workItem from="1615802585654" duration="189000" />
-      <workItem from="1615854557474" duration="1295000" />
+      <workItem from="1615854557474" duration="3448000" />
+      <workItem from="1615941972102" duration="21817000" />
     </task>
     <task id="LOCAL-00002" summary="react学习:组件事件传额外参数,组件直接调用redux的dispatch映射方法">
       <created>1615795829626</created>
@@ -85,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615802174736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="react学习:redux-thunk学习">
+      <created>1615860773142</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615860773143</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

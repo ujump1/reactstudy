@@ -52,12 +52,13 @@ class ReduxDemo extends React.Component{
         return (
             <div>
                 <Button type='primary' onClick={this.handleBtnClickAdd}>自增5</Button>
-                <Button type='primary' onClick={this.props.addAction}>自增5</Button>
+                <Button type='primary' onClick={()=>this.props.addAction()}>自增5</Button>
                 <Button type='primary' onClick={this.handleBtnClickSub}>自减5</Button>
                 <div>
                     <Input  style={{width: '135px'}}    onChange={this.handleChange}></Input>
                     {/*这里主要是为了测试传参才这样写的*/}
                     <Button type='primary' onClick={this.handleAdd.bind(this,this.state.addNumber)}>增加</Button>
+                    <Button type='primary' onClick={()=>this.handleAdd(this.state.addNumber,this)}>增加</Button>
                 </div>
                 <p>当前数字{this.props.number}</p>
             </div>

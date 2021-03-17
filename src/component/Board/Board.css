@@ -1,11 +1,15 @@
 .board-row:after {
-    clear: both;
-    content: "";
+    /*clear: both;*/
+    /*content: "";*/
     /*display: Table;*/
 }
 .status {
     margin-bottom: 10px;
     text-align: center;
+}
+
+.back {
+    margin-top: 10px;
 }
 .board-row{
     text-align: center;
