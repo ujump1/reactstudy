@@ -75,7 +75,7 @@ class MyTable extends React.Component {
                 dataSource={dataSource}
                 pagination={{
                     showQuickJumper: false,
-                    onShowSizeChange: onShowSizeChange,
+                    //onShowSizeChange: onShowSizeChange, // 因为onShowSizeChange肯定会引起onChange的变化，所以不用onShowChange
                     onChange: onChange,
                     showSizeChanger: true,
                     showTotal: total => `总共${pagination.total}条`,
