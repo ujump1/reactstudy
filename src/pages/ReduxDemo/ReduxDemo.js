@@ -42,6 +42,7 @@ class ReduxDemo extends React.Component{
     }
 
     handleAdd(number,e){
+        console.log(e)
         this.props.addNumber(Number.parseInt(number));
     }
 
@@ -56,9 +57,10 @@ class ReduxDemo extends React.Component{
                 <Button type='primary' onClick={this.handleBtnClickSub}>自减5</Button>
                 <div>
                     <Input  style={{width: '135px'}}    onChange={this.handleChange}></Input>
-                    {/*这里主要是为了测试传参才这样写的*/}
+                    {/*这里主要是为了测试传参才这样写的,在这两种情况下，React 的事件对象 e 会被作为第二个参数传递。
+                    如果通过箭头函数的方式，事件对象必须显式的进行传递，而通过 bind 的方式，事件对象以及更多的参数将会被隐式的进行传递。*/}
                     <Button type='primary' onClick={this.handleAdd.bind(this,this.state.addNumber)}>增加</Button>
-                    <Button type='primary' onClick={()=>this.handleAdd(this.state.addNumber,this)}>增加</Button>
+                    <Button type='primary' onClick={(e)=>this.handleAdd(this.state.addNumber,e)}>增加</Button>
                 </div>
                 <p>当前数字{this.props.number}</p>
             </div>
